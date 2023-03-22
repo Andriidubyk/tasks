@@ -1,0 +1,141 @@
+@import "../../scss/nullstyle.scss";
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+body {
+  font-family: "Roboto";
+}
+.container {
+  max-width: 445px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.back {
+  position: fixed;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin: 23px 0 0 24px;
+  &:hover {
+    img {
+      transform: translateX(-5px);
+      transition: transform 0.15s ease-in-out;
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .back {
+    position: static;
+  }
+}
+
+.arrow {
+  flex: 0 0 16px;
+  height: 16px;
+  img {
+    transition: transform 0.15s ease-in-out;
+  }
+  &:hover {
+    img {
+      transform: translateX(-5px);
+    }
+  }
+}
+
+.text {
+  font-family: "Karla";
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+.page {
+}
+.page__about {
+}
+.about {
+  text-align: center;
+  padding-top: 76px;
+  padding-bottom: 142px;
+}
+
+.about__avatar {
+  text-align: center;
+}
+.about__avatar {
+  img {
+    flex: 0 0 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #f2f2f7;
+  }
+}
+@media (max-width: 479.98px) {
+  .about__avatar {
+    img {
+      flex: 0 0 150px;
+      height: 150px;
+    }
+  }
+}
+.about__name {
+  font-size: 32px;
+  line-height: 38px;
+  margin-top: 34px;
+  color: #081f32;
+}
+.about__info {
+  text-align: left;
+  margin-top: 34px;
+}
+
+.about__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  text-align: center;
+  color: #8e8e93;
+}
+@media (max-width: 479.98px) {
+  .about__title {
+    text-align: left;
+  }
+}
+.about__items {
+  margin-top: 16px;
+}
+.about__item {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 9px 0px 12px 0px;
+  margin-left: 16px;
+}
+.about__character {
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #081f32;
+}
+
+.about__value {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #6e798c;
+}
+@media (max-width: 991.98px) {
+  .about {
+    padding-top: 124px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767.98px) {
+  .about {
+    padding-bottom: 50px;
+  }
+}
